@@ -216,7 +216,7 @@ CFG = {
   "val_frac": 0.10,
   "test_frac": 0.20
 }
-# Per split:
+## Per split:
 past_length = X
 prediction_length = Y
 use_feat_dynamic_real = True      # statics replicated across time
@@ -229,7 +229,7 @@ merged_df (file_id + static continuous features)
 df_output (file_id, timestep, CO2)
 deepstate_run.py — builds datasets, trains DeepState with validation selection, saves DeepState_RESULTS.csv.
 
-# Data prep (writes merged_df.parquet / df_output.parquet)
+## Data prep (writes merged_df.parquet / df_output.parquet)
 !conda run -n mx19 python -u prep.py
 
 # Train & evaluate DeepState (streams logs, writes DeepState_RESULTS.csv)
