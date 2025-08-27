@@ -215,13 +215,15 @@ CFG = {
   "num_batches_per_epoch": 100, # controls epoch length; raise for final runs (e.g., 200)
   "val_frac": 0.10,
   "test_frac": 0.20
-}
-## Per split:
-past_length = X
-prediction_length = Y
-use_feat_dynamic_real = True      # statics replicated across time
-use_feat_static_cat  = False
-cardinality = [1]                 # required by GluonTS even when no static cats
+} 
+
+Per split:
+
+      past_length = X
+      prediction_length = Y
+      use_feat_dynamic_real = True      # statics replicated across time
+      use_feat_static_cat  = False
+      cardinality = [1]                 # required by GluonTS even when no static cats
 
 ## Files and running 
 prep.py — loads CSV, builds:
