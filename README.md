@@ -229,10 +229,8 @@ merged_df (file_id + static continuous features)
 df_output (file_id, timestep, CO2)
 deepstate_run.py — builds datasets, trains DeepState with validation selection, saves DeepState_RESULTS.csv.
 
-## Data prep (writes merged_df.parquet / df_output.parquet)
-!conda run -n mx19 python -u prep.py
+Data prep (writes merged_df.parquet / df_output.parquet) : !conda run -n mx19 python -u prep.py
+Train & evaluate DeepState (streams logs, writes DeepState_RESULTS.csv) : !conda run -n mx19 python -u deepstate_run.py
 
-# Train & evaluate DeepState (streams logs, writes DeepState_RESULTS.csv)
-!conda run -n mx19 python -u deepstate_run.py
 
 
