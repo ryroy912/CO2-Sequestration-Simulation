@@ -16,7 +16,7 @@ merged_df: static features + cluster label.
 df_output: long-format CO₂ series (file_id, timestep, CO2).
 
 #  TFT model 
-Data used by the model - 
+## Data used by the model - 
 
   Target (time series): Total_CO2_capture — CO₂ value at each timestep 
   Static features (constant within a series):
